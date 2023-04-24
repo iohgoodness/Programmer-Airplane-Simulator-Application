@@ -1,0 +1,49 @@
+{
+  "name": "Programmer-Airplane-Simulator-Application",
+  "tree": {
+    "$className": "DataModel",
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+        "StarterPlayerScripts": {
+          "$className": "StarterPlayerScripts",
+          "Init": {
+            "$path": "src/client/runtime"
+          }
+      }
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "shared-sync": {
+        "$path": "src/shared"
+      },
+      "client-sync": {
+        "$path": "src/client/storage"
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+
+    "ServerScriptService": {
+      "Init": {
+        "$path": "src/server/runtime"
+      }
+    },
+
+    "ReplicatedFirst": {
+      "load-sync": {
+        "$path": "src/start"
+      }
+    },
+
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "server-sync": {
+          "$path": "src/server/storage"
+      }
+    }
+    
+  }
+}
